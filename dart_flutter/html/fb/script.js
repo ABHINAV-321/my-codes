@@ -1,0 +1,19 @@
+$(document).ready(function(){
+$("#singup").validate({
+    rules:{
+        fName:{
+            required:true,
+            minlength:4,
+            maxlength:12
+        },
+        sName:{
+            required:true,
+            minlength:4
+        },
+        emailPh:{
+            required:true,
+            email:true,
+    }
+}
+})
+})
